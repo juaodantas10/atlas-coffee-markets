@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.sidebar {
+  background: #111827;
+  color: #f9fafb;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.sidebar button {
+  margin-top: auto;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.auth-card {
+  width: min(420px, 95vw);
+  margin: 5rem auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input, button {
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cards-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.08);
+}
+
+.simulator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.simulator-grid label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.error-msg {
+  color: #b91c1c;
+}
